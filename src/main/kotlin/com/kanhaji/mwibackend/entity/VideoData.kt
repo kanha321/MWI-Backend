@@ -1,8 +1,11 @@
 package com.kanhaji.mwibackend.entity
 
+import org.springframework.data.annotation.Id
 import java.util.UUID
 
 data class VideoData(
+
+    @Id
     var videoId: String = UUID.randomUUID().toString(),
     var title: String,
     var description: String,
